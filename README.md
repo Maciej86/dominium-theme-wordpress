@@ -1,1 +1,1 @@
-# Dominium theme WordPress
+# Dominium
