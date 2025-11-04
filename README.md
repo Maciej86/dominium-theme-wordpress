@@ -26,6 +26,7 @@ Sekcja to wyświetla treści znajdujące na samej górze strony na zdjęciu.
 W sekcji znajdują się dwa przyciski. Jeżeli nie podamy linka prowadzącego do innej strony lub do części strony głównej, po przez kotwicę, to przyciski nie będą wyświetlane. 
 
 **Wyświetlana zawartość:**
+-
  - w przypadku braku edycji treści, zostanie wyświetlony tekst domyślny. Jeżeli któryś z pól zostanie pusty, nie zostanie on wyświetlony. 
  - treść z pola `Treść pod nagłówkiem`  jest zawsze wyświetlana wielkimi literami, niezależnie od wprowadzonego tekstu w konfiguratorze.
  - treść przycisków jest zawsze wyświetlana wielkimi literami, niezależnie od wprowadzonego tekstu w konfiguratorze.
@@ -38,6 +39,7 @@ W sekcji znajdują się dwa przyciski. Jeżeli nie podamy linka prowadzącego do
 Sekcja wyświetlająca treść w trzech boksach. 
 
 **Wyświetlana zawartość:**
+-
  - w przypadku braku edycji treści, zostanie wyświetlony tekst domyślny.
  - w przypadku pozostawienia pustych pól, na stronie zostanie wyświetlony boks bez zawartości.
  
@@ -47,6 +49,7 @@ Sekcja wyświetlająca treść w trzech boksach.
 Sekcja wyświetlająca cztery boksy z odliczaniem. Każda z wartości jest odliczana od zero do wartości wskazanej w ustawieniach motywu.
 
 **Wyświetlana zawartość:**
+-
  - w przypadku braku edycji treści, zostanie wyświetlony tekst domyślny.
  - jeżeli chcemy uzyskać symbol metrów kwadratowych wówczas trzeba liczbę 2 otoczyć znacznikami `<sup>2</sup>`. Na stronie zostanie wyświetlone m<sup>2</sup>.
  - tytuł odliczania, jest zawsze wyświetlany wielkimi literami, niezależnie od wprowadzonego tekstu w konfiguratorze.
