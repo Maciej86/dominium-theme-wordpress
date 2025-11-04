@@ -4,7 +4,6 @@ Dominium to motyw strony dla systemu WordPress. Poniższa dokumentacja jest doku
 
 
 ## Konfiguracja nawigacji
-    Miejsce konfiguracji
     Wygląd => Menu
     
 Motyw oferuje dwie nawigacje:
@@ -16,13 +15,11 @@ W obu przypadkach nawigacja jest jedno poziomowa.
 ***Dopóki nawigacja nie zostanie skonfigurowana w panelu administracyjnym WordPress, nie będzie się wyświetlać prawidłowo. Wynika to z budowy nawigacji.***
 
 ## Konfiguracja strony głównej
-    Miejsce konfiguracji
     Wygląd => Dostosuj => Ustawienia motywu strony głównej
     
 Stronę główną dzielimy na kilka sekcji, którą każdą z nich możemy podzielić na kilka sekcji.
 
 ### Sekcja Nagłówek
-    Miejsce konfiguracji
     Wygląd => Dostosuj => Ustawienia motywu strony głównej => Sekcja - Nagłówek
     
 Sekcja to wyświetla treści znajdujące na samej górze strony na zdjęciu. 
@@ -36,7 +33,6 @@ W sekcji znajdują się dwa przyciski. Jeżeli nie podamy linka prowadzącego do
 
 
 ### Sekcja Kroki
-       Miejsce konfiguracji
        Wygląd => Dostosuj => Ustawienia motywu strony głównej => Sekcja - Kroki
     
 Sekcja wyświetlająca treść w trzech boksach. 
@@ -46,7 +42,6 @@ Sekcja wyświetlająca treść w trzech boksach.
  - w przypadku pozostawienia pustych pól, na stronie zostanie wyświetlony boks bez zawartości.
  
 ### Sekcja Odliczanie
-       Miejsce konfiguracji
        Wygląd => Dostosuj => Ustawienia motywu strony głównej => Sekcja - Odliczanie
         
 Sekcja wyświetlająca cztery boksy z odliczaniem. Każda z wartości jest odliczana od zero do wartości wskazanej w ustawieniach motywu.
