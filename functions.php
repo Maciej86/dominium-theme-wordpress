@@ -42,6 +42,10 @@ if (is_customize_preview() || is_admin()) {
     require get_template_directory() . '/inc/widget/dominium-related-category-posts-widget.php';
 // }
 
+if ( defined( 'WP_DEBUG' ) && WP_DEBUG ) {
+    require get_template_directory() . '/inc/debug/enqueue-debug.php';
+}
+
 // ========== OPTIONAL: FRONT-END CONDITIONAL INCLUDES ==========
 /**
  * Example: load specific files only for certain types of pages (homepage, category, 404, etc.)
