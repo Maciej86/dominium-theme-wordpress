@@ -35,7 +35,7 @@ if (is_customize_preview() || is_admin()) {
 
 // ==========  ==========
 /**
- * Load widgets only in the admin area.
+ * Load widgets.
  */
 require get_template_directory() . '/inc/widget/dominium-single-post-widget.php';
 require get_template_directory() . '/inc/widget/dominium-simple-category-posts-widget.php';
