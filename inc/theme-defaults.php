@@ -6,6 +6,7 @@ return [
 		'facebook' => 'https://www.facebook.pl',
 		'instagram' => 'https://www.instagram.com/',
 		'tiktok' => 'https://www.tiktok.com/pl-PL/',
+		'x' => 'https://x.com/?lang=pl'
 	],
 	'header' => [
 		'title'       => '20 lat doświadczenia',

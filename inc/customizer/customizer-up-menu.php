@@ -67,7 +67,7 @@ function dominium_custom_up_menu_support( $wp_customize ) {
     "section"  => "up_menu_section",
     "settings" => "up_menu_facebook",
     "type"     => "text",
-    "description" => __( "Podaj pełny adres strony wraz z https.", "dominium" ),
+    "description" => __( "Podaj pełny adres strony wraz z https. Brak adresu spowoduje brak wyświetlenia ikony.", "dominium" ),
   ));
 
   // Instagram
@@ -82,7 +82,7 @@ function dominium_custom_up_menu_support( $wp_customize ) {
     "section"  => "up_menu_section",
     "settings" => "up_menu_instagram",
     "type"     => "text",
-    "description" => __( "Podaj pełny adres strony wraz z https.", "dominium" ),
+    "description" => __( "Podaj pełny adres strony wraz z https. Brak adresu spowoduje brak wyświetlenia ikony.", "dominium" ),
   ));
 
   // Tik-Tok
@@ -97,8 +97,23 @@ function dominium_custom_up_menu_support( $wp_customize ) {
     "section"  => "up_menu_section",
     "settings" => "up_menu_tiktok",
     "type"     => "text",
-    "description" => __( "Podaj pełny adres strony wraz z https.", "dominium" ),
+    "description" => __( "Podaj pełny adres strony wraz z https. Brak adresu spowoduje brak wyświetlenia ikony.", "dominium" ),
   ));
+
+    // Tik-Tok
+    $wp_customize->add_setting( "up_menu_x", array(
+      "default"           =>   $defaults['up_menu']['x'],
+      "sanitize_callback" => "sanitize_text_field",
+    ));
+  
+    // Add contrl email customizer
+    $wp_customize->add_control( "up_menu_tiktok_control", array(
+      "label"    => __( "Profil na X", "dominium" ),
+      "section"  => "up_menu_section",
+      "settings" => "up_menu_x",
+      "type"     => "text",
+      "description" => __( "Podaj pełny adres strony wraz z https. Brak adresu spowoduje brak wyświetlenia ikony.", "dominium" ),
+    ));
   
 };
 add_action( "customize_register", "dominium_custom_up_menu_support" );
