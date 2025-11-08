@@ -4,7 +4,7 @@
  */
 function dominium_enqueue_cookie() {
 
-    wp_enqueue_style('dominium-cookie', get_stylesheet_directory_uri() . '/assets/css/cookie.css', [], filemtime(get_stylesheet_directory() . '/assets/css/cookie.css'), 'all');
+    wp_enqueue_style('dominium-cookie-style', get_stylesheet_directory_uri() . '/assets/css/cookie.css', [], filemtime(get_stylesheet_directory() . '/assets/css/cookie.css'), 'all');
     wp_enqueue_script('dominium-cookie', get_template_directory_uri() . '/assets/js/dominium-cookie.js', [], '1.0', true);
 
     // Prepare data from Customizer

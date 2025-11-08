@@ -9,6 +9,21 @@ function dominium_custom_cookie_support( $wp_customize ) {
     "priority"    => 70,
   ));
 
+    // Visibility checkbox
+    $wp_customize->add_setting( "cookie_visible", array(
+      "default"           => $defaults['cookie']['visible'],
+      "sanitize_callback" => "wp_validate_boolean", 
+    ));
+  
+    $wp_customize->add_control( "cookie_visible_control", array(
+      "label"    => __( "Włącz lub wyłącz domyślną obsługę ciastek (cookie).", "dominium" ),
+      "section"  => "cookie_section",
+      "settings" => "cookie_visible",
+      "type"     => "checkbox",
+      "description" => __( "Motyw Dominium, domyślnie obsługuje ciasteczka (cookie). Odznacz aby wyłączyć domyślną obsługę ciasteczek. Wówczas możesz zainstalować dowolną wtyczkę do obłsugi ciastek.", "dominium" ),
+    ));
+  
+
   // Description cookie
   $wp_customize->add_setting( 'cookie_message_text', array(
     'default'           => $defaults['cookie']['description'],

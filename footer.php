@@ -19,6 +19,8 @@
   $other_2 = get_theme_mod("other_2", $defaults["footer"]["other_2"]);
   $title_copyright = get_theme_mod("title_copyright", $defaults["footer"]["title_copyright"]);
   $description_copyright = get_theme_mod("description_copyright", $defaults["footer"]["description_copyright"]);
+
+  $cooki_visible = get_theme_mod("cookie_visible", $defaults["cookie"]["visible"]);
 ?>
 
     <footer class="footer">
@@ -100,7 +102,9 @@
       </div>
     </footer>
     <?php 
-      get_template_part('template_parts/cookie/cookie','content');
+      if($cooki_visible) {
+        get_template_part('template_parts/cookie/cookie','content');
+      }
       wp_footer();
     ?>
   </body>

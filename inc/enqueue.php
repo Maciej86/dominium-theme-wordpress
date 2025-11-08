@@ -5,6 +5,8 @@
  */
 
 add_action( 'wp_enqueue_scripts', function() {
+    $defaults = require get_template_directory() . "/inc/theme-defaults.php";
+    $cooki_visible = get_theme_mod("cookie_visible", $defaults["cookie"]["visible"]);
 
     // Always loaded styles/scripts
     require get_template_directory() . '/inc/enqueue/enqueue-global.php';
@@ -24,7 +26,10 @@ add_action( 'wp_enqueue_scripts', function() {
         require get_template_directory() . '/inc/enqueue/enqueue-single-page.php';
     }
 
-    // Cookie handling (available globally)
-    require get_template_directory() . '/inc/enqueue/enqueue-cookie.php';
+    if($cooki_visible) {
+        // Cookie handling (available globally)
+        require get_template_directory() . '/inc/enqueue/enqueue-cookie.php';
+    }
+    
 
 }, 20);

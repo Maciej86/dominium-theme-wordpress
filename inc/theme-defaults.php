@@ -38,6 +38,7 @@ return [
 		'description_empty' => 'Ta część strony jest nadal w budowie. Jednak bez problemu możesz dalej korzystać z pozostałej części serwisu.',
 	],
 	'cookie' => [
+		'visible' => true,
 		'description' => 'Strona wykorzystuje pliki cookie w celu zapewnienia najlepszej jakości usług.',
 		'button_all' => 'Akceptuj wszystkie',
 		'button_necessary' => 'Akceptuj niezbędne',
