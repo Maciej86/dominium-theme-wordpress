@@ -80,6 +80,18 @@ function dominium_custom_category( $wp_customize ) {
         'section'  => $section_id,
         'type'     => 'text',
     ));
+
+    /* Empty category */
+    $empty_setting_id = 'dominium_category_' . $cat_id . '_empty_text';
+    $wp_customize->add_setting( $empty_setting_id, array(
+        'default'           => $defaults['category_texts']['empty_category'],
+        'sanitize_callback' => 'sanitize_text_field',
+    ));
+    $wp_customize->add_control( $empty_setting_id, array(
+        'label'    => __( 'Tekst przy pustej kategorii (np. "Brak wpisów")', 'dominium' ),
+        'section'  => $section_id,
+        'type'     => 'text',
+    ));
   }
 }
 add_action( 'customize_register', 'dominium_custom_category' );

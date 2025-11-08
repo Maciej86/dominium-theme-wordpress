@@ -6,6 +6,7 @@ $cat_id = get_query_var('category_id');
 $blog_date_display = get_theme_mod('dominium_category_' . $cat_id . '_date_display', 'created');
 $blog_red_more = get_theme_mod('dominium_category_' . $cat_id . '_readmore_text', $defaults['category_texts']['read_more']);
 $blog_see_all = get_theme_mod('dominium_category_' . $cat_id . '_seeall_text', $defaults['category_texts']['see_all']);
+$blog_empty_category = get_theme_mod('dominium_category_' . $cat_id . '_empty_text', $defaults['category_texts']['empty_category']);
 
 if (empty($query)) {
   global $wp_query;
@@ -73,7 +74,7 @@ if ($query->have_posts()) :
   <?php
 else:
   ?>
-    <div class="page_style" style="flex: 1"><h4 style="text-align: center;">Brak wpisów</h4></div>
+    <div class="page_style" style="flex: 1"><h4 style="text-align: center;"><?php echo esc_html( $blog_empty_category ); ?></h4></div>
   <?php
 endif;
 ?>
