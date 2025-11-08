@@ -1,0 +1,80 @@
+/* ASIDE */
+.aside {
+  margin-top: 30px;
+  width: 25%;
+  font-size: 15px;
+}
+
+@media (max-width: 800px) {
+  .aside {
+    width: 100%;
+    margin-top: 0px;
+    padding-top: 20px;
+    border-top: 1px solid var(--light);
+  }
+}
+
+.aside_box {
+  margin-bottom: 30px;
+}
+
+.aside_box h1,
+.aside_box h2,
+.aside_box h3,
+.aside_box h4,
+.aside_box h5,
+.aside_box h6 {
+  margin-bottom: 10px;
+  font-weight: 550;
+}
+
+.aside_box h1 a,
+.aside_box h2 a,
+.aside_box h3 a,
+.aside_box h4 a,
+.aside_box h5 a,
+.aside_box h6 a {
+  color: var(--primary-light);
+  text-decoration: none;
+}
+
+.aside_box h1 a:hover,
+.aside_box h2 a:hover,
+.aside_box h3 a:hover,
+.aside_box h4 a:hover,
+.aside_box h5 a:hover,
+.aside_box h6 a:hover {
+  color: var(--warning);
+}
+
+.aside_box p {
+  line-height: 25px;
+}
+
+.aside_box img {
+  width: 100%;
+  height: auto;
+  opacity: 0.8;
+}
+
+.aside_box ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+.aside_box ul li {
+  padding: 10px;
+  border-bottom: 1px dashed var(--light);
+}
+
+.aside_box ul li a {
+  text-decoration: none;
+  color: var(--primary-light);
+}
+
+.aside_box ul li a:hover {
+  color: var(--warning);
+}
+
+/* ------------- */

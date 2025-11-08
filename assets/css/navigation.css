@@ -1,0 +1,125 @@
+/* NAV DESKOPT */
+.nav {
+  padding: 15px 0px;
+  background-color: var(--primary-dark);
+  color: var(--white);
+}
+
+.nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__logo {
+  text-transform: lowercase;
+  font-size: 29px;
+  letter-spacing: 1px;
+}
+
+.nav__logo a {
+  color: var(--white);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.nav__logo a:hover {
+  color: var(--warning);
+}
+
+.nav__menu_mobile__button {
+  padding-top: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.nav__menu_mobile__button .material-symbols-outlined {
+  color: var(--white);
+  font-size: 30px;
+}
+
+.menu {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer_navigation .menu {
+  flex-direction: column;
+  gap: 10px;
+}
+
+.menu a {
+  padding: 18px;
+  color: var(--white);
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.footer_navigation .menu a {
+  padding-left: 0px;
+}
+
+.menu a:hover {
+  color: var(--warning);
+}
+/* ------------- */
+
+/* MOBILE NAV */
+.nav__menu_show_mobile,
+.nav__menu_hiden_mobile {
+  display: none;
+}
+
+.nav__menu_show_mobile .material-symbols-outlined,
+.nav__menu_hiden_mobile .material-symbols-outlined {
+  transition: color 0.4s;
+}
+
+.nav__menu_show_mobile:hover .material-symbols-outlined,
+.nav__menu_hiden_mobile:hover .material-symbols-outlined {
+  color: var(--warning);
+}
+
+@media (max-width: 850px) {
+  .nav__menu {
+    visibility: hidden;
+    position: fixed;
+    width: 200px;
+    height: 100%;
+    background-color: var(--primary-dark);
+    top: 0;
+    right: -220px;
+    box-shadow: 0 0 5px var(--black);
+    transition: all 0.4s;
+  }
+
+  .menu {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .menu li {
+    display: inline-block;
+    width: 100%;
+  }
+
+  .nav__menu_show_mobile {
+    display: block;
+  }
+
+  .nav__menu_hiden_mobile {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+  }
+}
+
+.show_mobile_menu {
+  visibility: visible;
+  right: 0px;
+  transition: all 0.4s;
+}
+/* ------------- */

@@ -1,0 +1,134 @@
+.cookie {
+  position: fixed;
+  width: 100%;
+  background-color: var(--white);
+  box-shadow: 0 0 15px var(--dark);
+  z-index: 100;
+}
+
+.cookie--full {
+  bottom: 0;
+  left: 0;
+}
+
+.cookie--modal {
+  width: 50%;
+  bottom: 20px;
+  border-radius: 15px;
+}
+
+.cookie--left {
+  left: 20px;
+}
+
+.cookie--right {
+  right: 20px;
+}
+
+@media (max-width: 800px) {
+  .cookie--modal {
+    width: 100%;
+    bottom: 0;
+    border-radius: 0;
+  }
+
+  .cookie--left {
+    left: 0;
+  }
+
+  .cookie--right {
+    right: 0;
+  }
+}
+
+.cookie__content {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 10px;
+}
+
+.cookie--modal .cookie__content {
+  flex-direction: column;
+}
+
+@media (max-width: 800px) {
+  .cookie__content {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+.cookie__content__text {
+  width: 70%;
+}
+
+.cookie--modal .cookie__content__text {
+  width: 100%;
+}
+
+@media (max-width: 800px) {
+  .cookie__content__text {
+    width: 100%;
+  }
+}
+
+.cookie__content__buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex: 1;
+}
+
+.cookie--modal .cookie__content__buttons {
+  flex-direction: row;
+  gap: 10px;
+}
+
+@media (max-width: 600px) {
+  .cookie--modal .cookie__content__buttons {
+    flex-direction: column;
+  }
+}
+
+.cookie--modal .cookie__content__buttons {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 800px) {
+  .cookie__content__buttons {
+    margin-bottom: 10px;
+  }
+}
+
+.cookie .button_link {
+  width: 200px;
+  text-align: center;
+}
+
+.button_link_more_cookie {
+  background-color: var(--primary-light);
+}
+
+.button_link_more_cookie:hover {
+  background-color: var(--primary-dark);
+}
+
+.cookie_iframe_placeholder {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding: 25px 30px;
+  border: 1px solid var(--warning);
+  border-radius: 8px;
+  box-shadow: 0 0 8px var(--warning-dark);
+}
+
+.cookie_iframe_placeholder__content {
+  margin: 0;
+  text-align: center;
+}

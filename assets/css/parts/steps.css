@@ -1,0 +1,49 @@
+/* STEPS */
+.steps > .container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 70px 0px;
+}
+
+.steps__box {
+  width: 30%;
+}
+
+.steps__box__title {
+  position: relative;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.steps__box__title::before {
+  content: "";
+  position: absolute;
+  top: 40px;
+  display: block;
+  width: 60px;
+  height: 2px;
+  background: var(--warning);
+}
+
+@media (max-width: 800px) {
+  .steps > .container {
+    flex-direction: column;
+  }
+
+  .steps__box {
+    width: 100%;
+  }
+
+  .steps__box__title,
+  .steps__box__description {
+    text-align: center;
+  }
+
+  .steps__box__title::before {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+/* ------------- */
