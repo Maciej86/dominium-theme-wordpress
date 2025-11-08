@@ -15,7 +15,7 @@ class Dominium_sortable_sections_homepage extends WP_Customize_Control {
     );
     wp_enqueue_script(
       'dominium-sortable-list-control',
-      get_template_directory_uri() . '/assets/js/customizer/dominium_sortable.js',
+      get_template_directory_uri() . '/assets/js/customizer/dominium-sortable.js',
       ['customize-controls'],
       null,
       true

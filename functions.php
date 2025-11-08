@@ -37,10 +37,10 @@ if (is_customize_preview() || is_admin()) {
 /**
  * Load widgets only in the admin area.
  */
-if ( is_admin() ) {
+// if ( is_admin() ) {
     require get_template_directory() . '/inc/widget/dominium-single-post-widget.php';
     require get_template_directory() . '/inc/widget/dominium-related-category-posts-widget.php';
-}
+// }
 
 // ========== OPTIONAL: FRONT-END CONDITIONAL INCLUDES ==========
 /**
