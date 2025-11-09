@@ -6,7 +6,7 @@ function dominium_custom_contact_page_support( $wp_customize ) {
 $wp_customize->add_section( 'contact_section', array(
   'title'       => __( 'Ustawienia strony kontaktowej', 'dominium' ),
   'description' => __( 'Tutaj możesz ustawić zawartość strony kontaktowej.', 'dominium' ),
-  'priority'    => 80,
+  'priority'    => 90,
 ) );
 
 // Page data contact

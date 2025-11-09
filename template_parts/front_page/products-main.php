@@ -2,7 +2,7 @@
 <?php
 $product_cat_id = get_theme_mod('products_post_category');
 $products_count = get_theme_mod('products_home_posts_count', 3);
-$products_layout = get_theme_mod('dominium_category_' . $product_cat_id . '_layout', 'products-basic');
+$products_layout = get_theme_mod('dominium_category_' . $product_cat_id . '_layout', 'layout-card');
 
 if (!empty($product_cat_id) && term_exists($product_cat_id, 'category')) {
   $category = get_category($product_cat_id);

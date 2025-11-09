@@ -6,7 +6,7 @@ function dominium_custom_cookie_support( $wp_customize ) {
   $wp_customize->add_section( "cookie_section", array(
     "title"       => __( "Ustawienia ciasteczek", "dominium" ),
     "description" => __( "Ustawienia wyświetlania informacji o ciasteczkach.", "dominium" ),
-    "priority"    => 70,
+    "priority"    => 80,
   ));
 
     // Visibility checkbox

@@ -46,7 +46,7 @@ function dominium_custom_category( $wp_customize ) {
     $layout_setting_id = 'dominium_category_' . $cat_id . '_layout';
 
     $wp_customize->add_setting( $layout_setting_id, array(
-        'default'           => 'blog-basic',
+        'default'           => 'layout-grid',
         'sanitize_callback' => 'dominium_sanitize_layout_choice',
     ));
 
@@ -104,6 +104,6 @@ function dominium_sanitize_date_display( $value ) {
 function dominium_sanitize_layout_choice( $value ) {
   $defaults = require get_template_directory() . '/inc/theme-defaults.php';
   $allowed = array_keys( $defaults['category_layouts'] );
-  return in_array( $value, $allowed, true ) ? $value : 'blog-basic';
+  return in_array( $value, $allowed, true ) ? $value : 'layout-grid';
 }
 ?>

@@ -85,8 +85,8 @@ return [
 		'button-text' => 'Napisz do nas',
 	],
 	'category_layouts' => [
-		'products-basic' => 'Produkty - podstawowy',
-		'blog-basic' => 'Blog - podstawowy',
+		'layout-card' => 'Karty pełne',
+		'layout-grid' => 'Siatka',
 	],
 	'category_texts' => [
 		'read_more' => 'Czytaj więcej',

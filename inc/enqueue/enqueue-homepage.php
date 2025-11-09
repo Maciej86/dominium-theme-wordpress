@@ -31,15 +31,15 @@ function dominium_enqueue_homepage() {
             continue; // skip if no category selected
         }
 
-        // Get layout assigned to this category (fallback to default blog-basic)
-        $layout = get_theme_mod( "dominium_category_{$cat_id}_layout", 'blog-basic' );
+        // Get layout assigned to this category (fallback to default layout-grid)
+        $layout = get_theme_mod( "dominium_category_{$cat_id}_layout", 'layout-grid' );
         $layout_slug = sanitize_key( $layout );
         $css_file = "/assets/css/category/{$layout_slug}.css";
         $css_path = get_stylesheet_directory() . $css_file;
 
         // Fallback if CSS file doesn't exist
         if ( ! file_exists( $css_path ) ) {
-            $layout_slug = 'blog-basic';
+            $layout_slug = 'layout-grid';
             $css_file = "/assets/css/category/{$layout_slug}.css";
             $css_path = get_stylesheet_directory() . $css_file;
         }

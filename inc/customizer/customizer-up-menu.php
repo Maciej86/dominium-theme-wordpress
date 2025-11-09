@@ -7,7 +7,7 @@ function dominium_custom_up_menu_support( $wp_customize ) {
   $wp_customize->add_section( "up_menu_section", array(
     "title"       => __( "Sekcja nad menu", "dominium" ),
     "description" => __( "Ustawienia skecji Nad nawigacją", "dominium" ),
-    "priority"    => 50,
+    "priority"    => 60,
   ));
 
   // Visibility checkbox
