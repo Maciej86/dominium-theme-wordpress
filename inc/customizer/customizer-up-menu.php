@@ -5,7 +5,7 @@ function dominium_custom_up_menu_support( $wp_customize ) {
 
   // Add panel up menu
   $wp_customize->add_section( "up_menu_section", array(
-    "title"       => __( "Sekcja nad menu", "dominium" ),
+    "title"       => __( "Ustawienia bleki nad menu", "dominium" ),
     "description" => __( "Ustawienia skecji Nad nawigacją", "dominium" ),
     "priority"    => 60,
   ));
