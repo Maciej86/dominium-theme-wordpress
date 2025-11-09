@@ -4,7 +4,7 @@
  *
  * Loads only the stylesheet that matches the layout selected
  * for the current category in the Customizer.
- * If no layout is assigned, loads the default: blog-basic.
+ * If no layout is assigned, loads the default: layout-grid.
  */
 
 function dominium_enqueue_category_layout() {
@@ -17,17 +17,17 @@ function dominium_enqueue_category_layout() {
 
     $cat_id = $category->term_id;
 
-    // Get selected layout or fallback to default 'blog-basic'
-    $layout = get_theme_mod( "dominium_category_{$cat_id}_layout", 'blog-basic' );
+    // Get selected layout or fallback to default 'layout-grid'
+    $layout = get_theme_mod( "dominium_category_{$cat_id}_layout", 'layout-grid' );
 
     // Sanitize and build path
     $layout_slug = sanitize_key( $layout );
     $style_path  = get_stylesheet_directory() . "/assets/css/category/{$layout_slug}.css";
 
-    // If user-assigned layout CSS file doesn't exist → fallback to blog-basic
+    // If user-assigned layout CSS file doesn't exist → fallback to layout-grid
     if ( ! file_exists( $style_path ) ) {
-        $layout_slug = 'blog-basic';
-        $style_path  = get_stylesheet_directory() . "/assets/css/category/blog-basic.css";
+        $layout_slug = 'layout-grid';
+        $style_path  = get_stylesheet_directory() . "/assets/css/category/layout-grid.css";
     }
 
     // Enqueue the layout stylesheet
