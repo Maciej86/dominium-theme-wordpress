@@ -94,6 +94,10 @@ return [
 		'read_more' => 'between',
 		'background' => false,
 	],
+	'settings_layout_card' => [
+		'position_image' => 'left',
+		'date' => 'down-article',
+	],
 	'category_texts' => [
 		'read_more' => 'Czytaj więcej',
 		'see_all'   => 'Zobacz wszystkie',

@@ -27,6 +27,7 @@ if (is_customize_preview() || is_admin()) {
 
     // Style layout Customizer settings
     require get_template_directory() . '/inc/customizer/settings-theme-post/customizer-layout-grid.php';
+    require get_template_directory() . '/inc/customizer/settings-theme-post/customizer-layout-card.php';
 
     // Homepage-specific Customizer settings
     require get_template_directory() . '/inc/customizer/settings-theme-homepage/customizer-sortable-sections.php';
