@@ -43,7 +43,7 @@ Motyw został zaprojektowany tak, abyś mógł szybko stworzyć nowoczesną stro
 
 ## Konfiguracja nawigacji
 
-    Wygląd => Menu
+    🛠️ Wygląd => Menu
 
 Motyw oferuje dwie nawigacje:
 
@@ -56,7 +56,7 @@ W obu przypadkach nawigacja jest jedno poziomowa.
 
 ## Ustawienia motywu strony głównej
 
-    Wygląd => Dostosuj => Ustawienia motywu strony głównej
+    🛠️ Wygląd => Dostosuj => Ustawienia motywu strony głównej
 
 > 💡 Strona główna składa się z kilku sekcji, które możesz **włączać, wyłączać** i **zmieniać kolejność**.
 
@@ -75,7 +75,7 @@ Nawigacja czy stopka nie podlegają opcji wyłączenia czy zminy kolejności.
 
 ### Ustawienia sekcji
 
-    Wygląd => Dostosuj => Ustawienia motywu strony głównej => Ustawienia sekcji
+    🛠️ Wygląd => Dostosuj => Ustawienia motywu strony głównej => Ustawienia sekcji
 
 W tym miejscu można wyłączyć lub włączyć poszczególne sekcje strony głównej, jak równieżzmienić ich kolejność na stronie.
 
@@ -83,7 +83,7 @@ W tym miejscu można wyłączyć lub włączyć poszczególne sekcje strony gł�
 
 ### Sekcja Nagłówek
 
-    Wygląd => Dostosuj => Ustawienia motywu strony głównej => Sekcja - Nagłówek
+    🛠️ Wygląd => Dostosuj => Ustawienia motywu strony głównej => Sekcja - Nagłówek
 
 Sekcja to wyświetla treści znajdujące na samej górze strony na zdjęciu.
 W sekcji znajdują się dwa przyciski. Jeżeli nie podamy linka prowadzącego do innej strony lub do części strony głównej, po przez kotwicę, to przyciski nie będą wyświetlane.
@@ -99,7 +99,7 @@ W sekcji znajdują się dwa przyciski. Jeżeli nie podamy linka prowadzącego do
 
 ### Sekcja Kroki
 
-     Wygląd => Dostosuj => Ustawienia motywu strony głównej => Sekcja - Kroki
+    🛠️ Wygląd => Dostosuj => Ustawienia motywu strony głównej => Sekcja - Kroki
 
 Sekcja wyświetlająca treść w trzech boksach.
 
@@ -112,7 +112,7 @@ Sekcja wyświetlająca treść w trzech boksach.
 
 ### Sekcja Odliczanie
 
-    Wygląd => Dostosuj => Ustawienia motywu strony głównej => Sekcja - Odliczanie
+    🛠️ Wygląd => Dostosuj => Ustawienia motywu strony głównej => Sekcja - Odliczanie
 
 Sekcja wyświetlająca cztery boksy z odliczaniem. Każda z wartości jest odliczana od zero do wartości wskazanej w ustawieniach motywu.
 
@@ -126,7 +126,7 @@ Sekcja wyświetlająca cztery boksy z odliczaniem. Każda z wartości jest odlic
 
 ### Sekcja Napisz do nas
 
-    Wygląd => Dostosuj => Ustawienia motywu strony głównej => Sekcja - Napisz do nas
+    🛠️ Wygląd => Dostosuj => Ustawienia motywu strony głównej => Sekcja - Napisz do nas
 
 Sekcja wyświetlająca nagłówek tekst oraz przycisk, prowadzący do dowolnej strony, na przykład strony kontaktowej. Dzięki konfiguracji sekcja ta może zostać wykorzystana również do promocji wydarzenia.
 
