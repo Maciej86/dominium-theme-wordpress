@@ -8,10 +8,12 @@ $blog_layout =  get_theme_mod('dominium_category_' . $blog_cat_id . '_layout', '
 if (!empty($blog_cat_id) && term_exists($blog_cat_id, 'category')) {
   $category = get_category($blog_cat_id);
   $category_name = $category->name;
+  $category_description = $category->description;
 
   $section_id = sanitize_title($category_name);
 } else {
   $category_name = __('Ostatnie wpisy na blogu', 'dominium');
+  $category_description = "";
   $section_id = 'blog';
 }
 
@@ -23,6 +25,9 @@ if ( $blog_count === 0 ) {
 <section id="<?php echo esc_attr($section_id); ?>" class="blog constructions scroll_margin">
   <div class="container">
     <h1 class="title_section"><?php echo esc_html($blog_title); ?></h1>
+    <?php if (!empty($category_description)) : ?>
+      <p class="blog__description"><?php echo esc_html($category_description); ?></p>
+    <?php endif; ?>
 
     <?php
       if (!empty($blog_cat_id) && term_exists($blog_cat_id, 'category')) {

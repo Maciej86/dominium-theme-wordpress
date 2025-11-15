@@ -3,6 +3,12 @@
   padding: 50px 0;
 }
 
+.blog__description {
+  text-align: center;
+  padding: 0 20%;
+  font-size: 20px;
+}
+
 .blog_container {
   display: flex;
   flex-wrap: wrap;
