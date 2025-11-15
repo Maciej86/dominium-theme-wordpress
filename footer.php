@@ -28,11 +28,21 @@
         <div class="footer__box">
           <h3 class="footer__box__title"><?php echo esc_html( $company_shortname ); ?></h3>
           <ul>
-            <li><?php echo esc_html( $company_fullname ); ?></li>
-            <li><?php echo esc_html( $company_address_1 ); ?></li>
-            <li><?php echo esc_html( $company_address_2 ); ?></li>
-            <li>NIP: <?php echo esc_html( $company_nip ); ?></li>
-            <li>Regon: <?php echo esc_html( $company_regon ); ?></li>
+            <?php if ( !empty( $company_fullname ) ) : ?>
+              <li><?php echo esc_html( $company_fullname ); ?></li>
+            <?php endif; ?>
+            <?php if ( !empty( $company_address_1 ) ) : ?>
+              <li><?php echo esc_html( $company_address_1 ); ?></li>
+            <?php endif; ?>
+            <?php if ( !empty( $company_address_2 ) ) : ?>
+              <li><?php echo esc_html( $company_address_2 ); ?></li>
+            <?php endif; ?>
+            <?php if ( !empty( $company_nip ) ) : ?>
+              <li>NIP: <?php echo esc_html( $company_nip ); ?></li>
+            <?php endif; ?>
+            <?php if ( !empty( $company_regon ) ) : ?>
+              <li>Regon: <?php echo esc_html( $company_regon ); ?></li>
+            <?php endif; ?>
             <?php if ( !empty( $other_1 ) ) : ?>
               <li><?php echo esc_html( $other_1 ); ?></li>
             <?php endif; ?>
