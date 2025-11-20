@@ -31,7 +31,7 @@
 
     <?php wp_head(); ?>
   </head>
-  <body class="archivo-200">
+  <body class="theme-steel">
     <div class="container_nav">
 
       <?php 
