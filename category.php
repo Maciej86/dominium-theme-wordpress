@@ -15,6 +15,7 @@
     
       <?php
         if ($template_part) {
+          set_query_var('category_id', $cat_id);
           load_template($template_part, true);
         } else {
           echo '<p>' . __('Nie znaleziono szablonu dla wybranego układu.', 'dominium') . '</p>';
