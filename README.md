@@ -153,14 +153,17 @@ Obie sekcje na stronie głównej wyświetlają wpisy z wybranych kategorii. W pr
 
 ## Ustawienia strony kontaktowej
 
+Tutaj wspomniej o wtyczce Contact Form 7.
+
 ## Widget motywu
 
 ## W przygotowaniu
 
 - [ ] Włączanie oraz wyłącznie opisu dla kategorii na stronie głównej oraz stronie kategorii
-- [ ] Włączenie oraz włączenie belki nad nawigacją
+- [ ] Ustawienia belki nad nawigacją
 - [ ] Zmiana ilości boksów na stronie głównej w sekcji "Odliczanie"
 - [ ] Wyświetlaenie dowolnej strony lub wpisu na stronie głównej
+- [ ] Możliwość dodanie własnego fontu z google
 
 ## Licencja
 
