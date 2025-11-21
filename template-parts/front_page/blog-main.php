@@ -22,11 +22,11 @@ if ( $blog_count === 0 ) {
 }
 ?>
 
-<section id="<?php echo esc_attr($section_id); ?>" class="blog constructions scroll_margin">
+<section id="<?php echo esc_attr($section_id); ?>" class="grid constructions scroll_margin">
   <div class="container">
     <h1 class="title_section"><?php echo esc_html($blog_title); ?></h1>
     <?php if (!empty($category_description)) : ?>
-      <p class="blog__description"><?php echo esc_html($category_description); ?></p>
+      <p class="grid__description"><?php echo esc_html($category_description); ?></p>
     <?php endif; ?>
 
     <?php

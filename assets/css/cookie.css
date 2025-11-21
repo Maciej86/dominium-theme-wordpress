@@ -1,8 +1,8 @@
 .cookie {
   position: fixed;
   width: 100%;
-  background-color: var(--white);
-  box-shadow: 0 0 15px var(--dark);
+  background-color: var(--cookie-bg);
+  box-shadow: var(--cookie-box-shadow);
   z-index: 100;
 }
 
@@ -14,7 +14,7 @@
 .cookie--modal {
   width: 50%;
   bottom: 20px;
-  border-radius: 15px;
+  border-radius: var(--cookie-modal-border-radius);
 }
 
 .cookie--left {
@@ -61,6 +61,7 @@
 
 .cookie__content__text {
   width: 70%;
+  color: var(--cookie-color);
 }
 
 .cookie--modal .cookie__content__text {
@@ -109,11 +110,11 @@
 }
 
 .button_link_more_cookie {
-  background-color: var(--primary-light);
+  background-color: var(--cookie-button-bg);
 }
 
 .button_link_more_cookie:hover {
-  background-color: var(--primary-dark);
+  background-color: var(--cookie-button-hover-bg);
 }
 
 .cookie_iframe_placeholder {
@@ -121,11 +122,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 15px;
-  padding: 25px 30px;
-  border: 1px solid var(--warning);
-  border-radius: 8px;
-  box-shadow: 0 0 8px var(--warning-dark);
+  gap: var(--cookie-placeholder-gap);
+  padding: var(--cookie-placeholder-padding);
+  border: var(--cookie-placeholder-border);
+  border-radius: var(--cookie-placeholder-border-radius);
+  box-shadow: var(--cookie-placeholder-box-shadow);
 }
 
 .cookie_iframe_placeholder__content {

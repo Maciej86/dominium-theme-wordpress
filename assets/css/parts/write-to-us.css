@@ -1,7 +1,7 @@
 /* WRITE TO US */
 .write_to_us {
   position: relative;
-  padding: 30px 0px;
+  padding: var(--wtu-padding);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -37,8 +37,8 @@
 }
 
 .write_to_us__conteiner__left__title {
-  font-size: 30px;
-  font-weight: 300;
+  font-size: var(--wtu-title-font-size);
+  font-weight: var(--wtu-title-font-weight);
 }
 
 .write_to_us__conteiner__right {
@@ -49,22 +49,24 @@
 }
 
 .write_to_us__conteiner__right__link {
-  border: 2px solid var(--warning);
-  background-color: var(--warning);
-  border-radius: 30px;
-  padding: 16px 26px;
-  font-size: 16px;
-  font-weight: 500;
-  text-align: center;
-  color: var(--white);
-  text-transform: uppercase;
-  text-decoration: none;
+  background-color: var(--wtu-button-bg);
+  border: var(--wtu-button-border);
+  border-radius: var(--wtu-button-border-radius);
+  padding: var(--wtu-button-padding);
+  font-size: var(--wtu-button-font-size);
+  font-weight: var(--wtu-button-font-weight);
+  text-align: var(--wtu-button-text-align);
+  color: var(--wtu-button-color);
+  text-transform: var(--wtu-button-text-transform);
+  text-decoration: var(--wtu-button-text-decoration);
   transition: background 0.4s, border 0.4s;
 }
 
 .write_to_us__conteiner__right__link:hover {
-  background-color: var(--warning-dark);
-  border-color: var(--warning-dark);
+  background-color: var(--wtu-button-hover-bg);
+  border-color: var(--wtu-button-hover-border-color);
+  color: var(--wtu-button-hover-color);
+  text-decoration: var(--wtu-button-hover-text-decoration);
 }
 
 @media (max-width: 750px) {

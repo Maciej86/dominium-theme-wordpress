@@ -33,21 +33,14 @@
   }
 }
 
-.contact__form p {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 10px;
-}
-
-.contact__form p span {
-  width: 100%;
+.contact__form p input {
+  margin-bottom: var(--input-margin-bottom);
 }
 
 .map {
-  margin-top: 40px;
   width: 100%;
-  height: 600px;
+  height: var(--map-height);
+  margin-top: var(--map-margin-top);
 }
 
 .map--empty {

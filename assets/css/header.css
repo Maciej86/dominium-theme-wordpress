@@ -1,7 +1,7 @@
 /* HEADER */
 .header {
   position: relative;
-  height: 800px;
+  height: var(--header-height);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -28,8 +28,8 @@
 
 @media (max-width: 800px) {
   .header {
-    padding-top: 80px;
-    height: 680px;
+    height: var(--header-mobile-height);
+    padding-top: var(--header-mobile-padding-top);
   }
 }
 
@@ -37,7 +37,7 @@
   position: fixed;
   top: 0;
   width: 100%;
-  box-shadow: 0 0 5px var(--black);
+  box-shadow: var(--header-bav-box-shadow);
   z-index: 999;
 }
 

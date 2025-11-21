@@ -1,9 +1,9 @@
 /* FOOTER */
 .footer {
-  padding: 30px;
-  background-color: var(--primary-dark);
-  color: var(--white);
-  font-size: 16px;
+  padding: var(--footer-padding);
+  background-color: var(--footer-bg);
+  color: var(--footer-color);
+  font-size: var(--footer-font-size);
 }
 
 .footer > .container {
@@ -12,8 +12,8 @@
 }
 
 .footer__box {
-  width: 33%;
-  padding: 0 10px;
+  width: var(--footer-box-width);
+  padding: var(--footer-box-padding);
 }
 
 @media (max-width: 800px) {
@@ -45,12 +45,12 @@
 }
 
 .footer__box__title {
-  font-size: 26px;
+  font-size: var(--fotter-box-title-font-size);
 }
 
 .footer__box__title-small {
-  font-size: 26px;
-  font-weight: 200;
+  font-size: var(--footer-box-title-small-font-size);
+  font-weight: var(--footer-box-title-small-font-weight);
 }
 
 .footer__box > ul {
@@ -62,49 +62,45 @@
 .footer__box > ul li {
   display: flex;
   align-items: center;
-  gap: 10px;
-  padding: 5px 0;
+  gap: var(--footer-box-list-item-gap);
+  padding: var(--footer-box-list-item-padding);
 }
 
 .footer__box > ul li .material-symbols-outlined {
-  color: var(--warning);
+  color: var(--footer-box-list-item-icon-color);
 }
 
 .footer__box .footer__box__list-contact li a {
-  text-decoration: none;
-  color: var(--warning);
+  color: var(--footer-box-list-item-link-color);
+  text-decoration: var(--footer-box-list-item-link-text-decoration);
 }
 
 .footer__box .footer__box__list-contact li a:hover {
-  text-decoration: underline;
+  color: var(--footer-box-list-item-link-hover-color);
+  text-decoration: var(--footer-box-list-item-link-hover-text-decoration);
 }
 
-.footer__box .nav__menu__list {
-  flex-direction: column;
+.footer_navigation .menu a {
+  color: var(--footer-color);
 }
 
-.footer__box .nav__menu__list li {
-  padding: 5px 0;
-}
-
-.footer__box .nav__menu__list__link {
-  padding: 0;
-  text-transform: none;
+.footer_navigation .menu a:hover {
+  color: var(--nav-menu-link-hover-color);
 }
 
 .footer__box__social_media {
   display: flex;
   align-items: center;
-  gap: 10px;
-  margin-top: 10px;
+  gap: var(--fotter-box-social-media-gap);
+  margin-top: var(--fotter-box-social-media-margin-top);
 }
 
 .footer__box__social_media a svg {
-  color: var(--light);
+  color: var(--fotter-box-social-media-link-color);
   transition: color 0.4s;
 }
 
 .footer__box__social_media a:hover svg {
-  color: var(--warning);
+  color: var(--fotter-box-social-media-link-hover-color);
 }
 /* ------------- */

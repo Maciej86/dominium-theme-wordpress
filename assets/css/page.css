@@ -1,16 +1,20 @@
 /* PAGE */
-.header_article {
-  margin-bottom: 15px;
-}
-
 .page_main {
-  margin: 100px 0px 50px 0px;
+  margin: var(--page-main-margin);
 }
 
 @media (max-width: 500px) {
   .page_main {
-    margin-top: 80px;
+    margin: var(--page-mobile-main-margin);
   }
+}
+
+.header_article {
+  margin: var(--page-title-article-margin);
+}
+
+.header_article .title_page {
+  margin: 0;
 }
 
 .page_style__post {
@@ -19,8 +23,8 @@
 }
 
 .page_style__post .page_style {
-  width: 75%;
-  padding-right: 40px;
+  width: var(--page-width);
+  padding-right: var(--page-padding-right);
 }
 
 @media (max-width: 800px) {
@@ -33,82 +37,77 @@
   }
 }
 
-.page_style h1,
-.page_style h2,
-.page_style h3,
-.page_style h4,
-.page_style h5,
-.page_style h6 {
-  margin: 26px 0;
-  font-weight: 400;
-}
-
 .page_style h1 {
-  font-size: 45px;
+  margin: var(--page-h1-margin);
+  font-weight: var(--page-h1-font-weight);
+  font-size: var(--page-h1-font-size);
 }
 
 .page_style h2 {
-  font-size: 34px;
+  margin: var(--page-h2-margin);
+  font-weight: var(--page-h2-font-weight);
+  font-size: var(--page-h2-font-size);
 }
 
 .page_style h3 {
-  font-size: 30px;
+  margin: var(--page-h3-margin);
+  font-weight: var(--page-h3-font-weight);
+  font-size: var(--page-h3-font-size);
 }
 
 .page_style h4 {
-  font-size: 26px;
+  margin: var(--page-h4-margin);
+  font-weight: var(--page-h4-font-weight);
+  font-size: var(--page-h4-font-size);
 }
 
 .page_style h5 {
-  font-size: 24px;
+  margin: var(--page-h5-margin);
+  font-weight: var(--page-h5-font-weight);
+  font-size: var(--page-h5-font-size);
 }
 
 .page_style h6 {
-  font-size: 22px;
+  margin: var(--page-h6-margin);
+  font-weight: var(--page-h6-font-weight);
+  font-size: var(--page-h6-font-size);
 }
 
 .page_style p strong,
 .page_style p b {
-  font-weight: 550;
+  font-weight: var(--page-bold-text-weight);
 }
 
 .page_style a {
-  color: var(--warning);
-  text-decoration: none;
+  color: var(--page-link-color);
+  text-decoration: var(--page-link-text-decoration);
 }
 
 .page_style a:hover {
-  text-decoration: underline;
+  color: var(--page-link-hover-color);
+  text-decoration: var(--page-link-text-hover-decoration);
 }
 
 .page_style ul li {
-  line-height: 1.6;
-  padding: 4px 0px;
+  line-height: var(--page-list-item-line-height);
+  padding: var(--page-list-item-padding);
 }
 
 .page_style .top_image_page {
-  height: 400px;
+  height: var(--page-top-image-height);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.page_style .title_page {
-  margin-bottom: 20px;
-}
-
-.page_style__post .page_style .title_page {
-  margin-bottom: 0px;
-}
-
 .page_date {
   display: flex;
   align-items: center;
-  gap: 5px;
+  gap: var(--page-date-gap);
 }
 
 .page_date .material-symbols-outlined {
-  font-size: 20px;
-  color: var(--warning);
+  font-size: var(--page-date-icon-font-size);
+  color: var(--page-date-icon-color);
 }
 /* ------------- */

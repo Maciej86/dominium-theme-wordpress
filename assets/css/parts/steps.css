@@ -1,9 +1,13 @@
 /* STEPS */
+.steps {
+  background-color: var(--steps-bg);
+  padding: var(--steps-padding);
+}
+
 .steps > .container {
   display: flex;
   justify-content: space-between;
-  gap: 20px;
-  padding: 70px 0px;
+  gap: var(--steps-gap);
 }
 
 .steps__box {
@@ -12,19 +16,19 @@
 
 .steps__box__title {
   position: relative;
-  margin-bottom: 50px;
-  text-transform: uppercase;
-  font-weight: 300;
+  margin-bottom: var(--steps-title-margin-bottom);
+  text-transform: var(--steps-title-transform);
+  font-weight: var(--steps-title-font-weight);
 }
 
 .steps__box__title::before {
   content: "";
   position: absolute;
-  top: 40px;
+  top: var(--steps-border-top);
   display: block;
-  width: 60px;
-  height: 2px;
-  background: var(--warning);
+  width: var(--steps-border-width);
+  height: var(--steps-border-height);
+  background: var(--steps-border-bg);
 }
 
 @media (max-width: 800px) {
@@ -38,7 +42,7 @@
 
   .steps__box__title,
   .steps__box__description {
-    text-align: center;
+    text-align: var(--steps-mobile-text-align);
   }
 
   .steps__box__title::before {

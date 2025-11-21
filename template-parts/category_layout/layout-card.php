@@ -30,21 +30,21 @@ if ($query->have_posts()) :
     }
 
     ?>
-      <div class="products__box products__box--<?php echo $setting_layout_position_image ?>">      
+      <div class="cards__box cards__box--<?php echo $setting_layout_position_image ?>">      
 
         <div
-          class="products__box_image products__box_image--<?php echo $setting_layout_position_image ?> js-image-background"
+          class="cards__box_image cards__box_image--<?php echo $setting_layout_position_image ?> js-image-background"
           data-image="<?php the_post_thumbnail_url('medium'); ?>"
         ></div>
-        <div class="products__box__description products__box__description--<?php echo $setting_layout_position_image ?>">
+        <div class="cards__box__description cards__box__description--<?php echo $setting_layout_position_image ?>">
           <div>
 
             <?php if($setting_layout_date === "up-title") : ?>
               <?php echo $date_post; ?>
             <?php endif; ?>
 
-            <h2 class="products__box__description__title">
-              <a href="<?php the_permalink(); ?>" class="products__box__description__title_link"><?php the_title(); ?></a>
+            <h2 class="cards__box__description__title">
+              <a href="<?php the_permalink(); ?>" class="cards__box__description__title_link"><?php the_title(); ?></a>
             </h2>
 
             <?php if($setting_layout_date === "down-title") : ?>
@@ -58,7 +58,7 @@ if ($query->have_posts()) :
             <?php endif; ?>
           </div>
           
-          <div class="products__box__description__more products__box__description__more--<?php echo $setting_layout_position_image ?>">
+          <div class="cards__box__description__more cards__box__description__more--<?php echo $setting_layout_position_image ?>">
             <a href="<?php the_permalink(); ?>">
               <span class="material-symbols-outlined">expand_circle_right</span>
             </a>

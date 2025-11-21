@@ -24,7 +24,7 @@ if (empty($query)) {
 
 if ($query->have_posts()) :
   ?>
-    <div class="blog_container">
+    <div class="grid__container">
   <?php
   
   while ($query->have_posts()) : $query->the_post(); 
@@ -38,11 +38,11 @@ if ($query->have_posts()) :
       $date_post = '<div class="page_date"><span class="material-symbols-outlined">calendar_month</span>'. $date_value . '</div>';
     }
     ?>
-      <div class="blog_container__box <?php echo $setting_layout_background ? "blog_container__box--background" : "" ?>">
+      <div class="grid__container__box <?php echo $setting_layout_background ? "grid__container__box--background" : "" ?>">
         <div>
-          <div class="blog_container__box__image_title blog_container__box__image_title--<?php echo $setting_layout_title ?>">
+          <div class="grid__container__box__image_title grid__container__box__image_title--<?php echo $setting_layout_title ?>">
             <div
-              class="blog_container__box__image js-image-background"
+              class="grid__container__box__image js-image-background"
               data-image="<?php the_post_thumbnail_url('medium'); ?>"
             ></div>
 
@@ -51,8 +51,8 @@ if ($query->have_posts()) :
                 <?php echo $date_post; ?>
               <?php endif; ?>
 
-              <h2 class="blog_container__box__title">
-                <a href="<?php the_permalink(); ?>"class="blog_container__box__title__link">
+              <h2 class="grid__container__box__title">
+                <a href="<?php the_permalink(); ?>"class="grid__container__box__title__link">
                   <?php the_title(); ?>
                 </a>
               </h2>
@@ -65,12 +65,12 @@ if ($query->have_posts()) :
 
           <div class="page_style"><?php the_content(''); ?></div>
         </div>
-        <div class="blog_container__box__footer blog_container__box__footer--<?php echo $setting_layout_read_more ?>">
+        <div class="grid__container__box__footer grid__container__box__footer--<?php echo $setting_layout_read_more ?>">
           <?php if($setting_layout_date === "down-article") : ?>
             <?php echo $date_post; ?>
           <?php endif; ?>
           <p>
-            <a href="<?php the_permalink(); ?>" class="blog_container__box__footer__red_more"><?php echo esc_html( $blog_red_more ); ?></a>
+            <a href="<?php the_permalink(); ?>" class="grid__container__box__footer__red_more"><?php echo esc_html( $blog_red_more ); ?></a>
           </p>
         </div>
 

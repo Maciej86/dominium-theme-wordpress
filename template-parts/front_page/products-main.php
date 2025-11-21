@@ -21,12 +21,12 @@ if ( $products_count === 0 ) {
 }
 ?>
 
-<section id="<?php echo esc_attr($section_id); ?>" class="products scroll_margin">
+<section id="<?php echo esc_attr($section_id); ?>" class="cards scroll_margin">
   <div class="container">
 
     <h1 class="title_section"><?php echo esc_html($category_name); ?></h1>
     <?php if (!empty($category_description)) : ?>
-      <p class="products__description"><?php echo esc_html($category_description); ?></p>
+      <p class="cards__description"><?php echo esc_html($category_description); ?></p>
     <?php endif; ?>
 
     <?php
